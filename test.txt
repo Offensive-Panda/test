@@ -1,0 +1,3 @@
+$base64String = "cmVnIHF1ZXJ5IEhLQ1VcU09GVFdBUkVcUG9saWNpZXNcTWljcm9zb2Z0XFdpbmRvd3NcSW5zdGFsbGVyXEFsd2F5c0luc3RhbGxFbGV2YXRlZA0K"
+$command = [System.Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($base64String))
+Invoke-Expression $command
